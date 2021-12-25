@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <link rel="stylesheet" href ="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.18/vue.min.js"></script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="methods.json"></script>
+</head>
+<body>
+    <div class = "lenta">
+        <div class ="icon">
+            <h2 class="logo">Nur-Sultan</h2>
+            </div>
+            <div class = "menu">  
+                <ul>
+                <div id = "ok1">
+                <li><a :style="{ 'font-size': fontSize}" v-on:mouseover = "c1" v-on:mouseout = "o1" href="https://www.nur.kz/tags/novosti-nur-sultana/">NEWS</a></li>
+                </div>
+                <div id = "ok2">
+                <li><a :style="{ 'font-size': fontSize}" v-on:mouseover = "c2" v-on:mouseout = "o2" href="https://aboutkazakhstan.com/astana-city">ABOUT</a></li>
+                </div>    
+                <div id = "ok3">
+                <li><a :style="{ 'font-size': fontSize}" v-on:mouseover = "c3" v-on:mouseout = "o3" href="https://astana-service.online/services">SERVICES</a></li>
+                </div> 
+                <div id = "ok4">   
+                <li><a :style="{ 'font-size': fontSize}" v-on:mouseover = "c4" v-on:mouseout = "o4" href="http://www.astana2050.kz/en/infrastruktura/departments-of-akimat-of-astana">DEPARTMENTS</a></li>
+                </div>
+                <div id = "ok5">    
+                <li><a :style="{ 'font-size': fontSize}" v-on:mouseover = "c5" v-on:mouseout = "o5" href="https://astana.gov.kz/">GOVERNMENT</a></li>
+                </div>
+                <div id = "ok6">    
+                <li><a :style="{ 'font-size': fontSize}" v-on:mouseover = "c6" v-on:mouseout = "o6" href="someinfo.html">WIKI</a></li>
+                </div>
+            </ul>  
+                
+            </div>
+            <div class ="searching">
+                <input type="search" class="srch" name="" placeholder="Search?">
+                <a href="#"><button class="btn">Search</button></a>
+            </div>
+        </div>
+        
+
+        <div class ="welcome">
+            <h1>Welcome to 
+                <br><span>Nur-Sultan </span> <br>city!</h1>
+                <p class="par">Nur-Sultan is a modern city with a favorable
+                <br>environment attractive for tourists and 
+                <br>comfortable for residents and guests of the 
+                <br>Kazakh capital to live in. </p>
+
+                <button class ="joining"><a href="#">JOIN US</a></button>
+
+                <div class="reg">
+                    <h2>Login</h2>
+                    <input type="email" name="email" placeholder="Email">
+                    <input type="password" name="pass" placeholder="Password">
+                    <button class="btn1"><a href ="#">Login</a></button>    
+                    <p class="fullreg">I don't have an account
+                    <br><a href="register.html">Sign up</a></p>
+                    <p class="log">Login with</p>
+
+                <div class="icons">
+                    <a href ="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href ="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href ="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                    <a href ="#"><ion-icon name="logo-google"></ion-icon></a>
+                    <a href ="#"><ion-icon name="logo-skype"></ion-icon></a>
+                </div>
+            </div>   
+ </div>
+
+
+    <script type = "text/javascript">
+        var vm = new Vue({
+            el: '#ok1',
+            data: {
+                 fontSize: '17px'
+            },
+            methods : {
+               c1 : function() {
+                  this.fontSize = '19px';
+               },
+               o1 : function() {
+                  this.fontSize = '17px';
+               }
+            }
+         });
+    </script>
+    <script type = "text/javascript">
+        var vm = new Vue({
+            el: '#ok2',
+            data: {
+                 fontSize: '17px'
+            },
+            methods : {
+               c2 : function() {
+                  this.fontSize = '19px';
+               },
+               o2 : function() {
+                  this.fontSize = '17px';
+               }
+            }
+         });
+    </script>
+    <script type = "text/javascript">
+        var vm = new Vue({
+            el: '#ok3',
+            data: {
+                 fontSize: '17px'
+            },
+            methods : {
+               c3 : function() {
+                  this.fontSize = '19px';
+               },
+               o3 : function() {
+                  this.fontSize = '17px';
+               }
+            }
+         });
+    </script>
+    <script type = "text/javascript">
+        var vm = new Vue({
+            el: '#ok4',
+            data: {
+                 fontSize: '17px'
+            },
+            methods : {
+               c4 : function() {
+                  this.fontSize = '19px';
+               },
+               o4 : function() {
+                  this.fontSize = '17px';
+               }
+            }
+         });
+    </script>
+    <script type = "text/javascript">
+        var vm = new Vue({
+            el: '#ok5',
+            data: {
+                 fontSize: '17px'
+            },
+            methods : {
+               c5 : function() {
+                  this.fontSize = '19px';
+               },
+               o5 : function() {
+                  this.fontSize = '17px';
+               }
+            }
+         });
+      </script>
+      <script type = "text/javascript">
+        var vm = new Vue({
+            el: '#ok6',
+            data: {
+                 fontSize: '17px'
+            },
+            methods : {
+               c6 : function() {
+                  this.fontSize = '19px';
+               },
+               o6 : function() {
+                  this.fontSize = '17px';
+               }
+            }
+         });
+    </script>
+</body>
+</html>
